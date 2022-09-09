@@ -114,3 +114,63 @@ body {
 .attribution a {
   color: hsl(277, 64%, 61%);
 }
+
+/* For Small devices */
+@media (max-width: 375px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .main {
+    max-width: 100vw;
+  }
+
+  .stats-component {
+    grid-template-columns: 1fr;
+    gap: 3.6rem;
+    width: 35rem;
+
+    margin-top: 2rem;
+    margin-bottom: 3.6rem;
+  }
+
+  .text {
+    padding: 0 3.6rem 3.6rem 3.6rem;
+    text-align: center;
+    gap: 3.6rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .copy {
+    padding: 0;
+  }
+
+  .stats-list {
+    flex-direction: column;
+    gap: 3.6rem;
+  }
+
+  .stats-list li {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .num {
+    font-size: 2.4rem;
+  }
+
+  .img-box {
+    grid-row: 1;
+    width: 100%;
+  }
+
+  .attribution {
+    position: relative;
+    margin-bottom: 1.6rem;
+  }
+}
